@@ -1,4 +1,4 @@
-package Examples;
+package examples;
 import java.io.FileReader;
 import java.io.FileNotFoundException;
 import java.util.Scanner;

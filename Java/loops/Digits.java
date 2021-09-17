@@ -1,5 +1,5 @@
-// seperate the number into it's digits
-package Loops;
+// separate the number into it's digits
+package loops;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

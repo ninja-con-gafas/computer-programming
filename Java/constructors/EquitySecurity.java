@@ -1,4 +1,4 @@
-package Constructors;
+package constructors;
 public class EquitySecurity
 {
   int shares;
