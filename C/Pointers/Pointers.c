@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main()
+int main(void)
 {
 	system("clear");
 	int i,*j;
@@ -9,4 +9,5 @@ void main()
 	printf("\nYou entered %d\n",i);
 	printf("\nWhat does *j prints? Answer is %d\n",*j);
 	printf("\nWhat does j prints? Answer is %d\n",j);
+	return 0;
 }

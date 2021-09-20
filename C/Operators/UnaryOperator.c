@@ -1,5 +1,5 @@
 #include <stdio.h>
-void main()
+int main(void)
 {
  	int x=10,y=20,z=30;
  	z++;
@@ -8,5 +8,5 @@ void main()
  	printf("%d\n",++y);
  	printf("%d\n",y);
  	printf("%d\n",z);
+  return 0;
 }
-    

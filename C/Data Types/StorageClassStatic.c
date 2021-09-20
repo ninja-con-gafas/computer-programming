@@ -1,6 +1,6 @@
 #include<stdio.h>
 void addnumber();
-int main()
+int main(void)
 {
 	addnumber();
 	return 0;

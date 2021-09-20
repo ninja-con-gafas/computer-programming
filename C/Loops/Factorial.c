@@ -1,5 +1,5 @@
 #include <stdio.h>
-void main()
+int main(void)
 {
 	int in,i,fact=1;
 	printf("\nEnter A number\n");
@@ -9,4 +9,5 @@ void main()
 		fact=fact*i;
 	}
 	printf("\nFactorial of %d is %d\n",in,fact);
+	return 0;
 }

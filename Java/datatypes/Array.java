@@ -1,7 +1,7 @@
 package datatypes;
 import java.util.Scanner;
 import java.util.ArrayList;
-public class Reverse
+public class Array
 {
 	public static void main(String[] args)
 	{
@@ -11,9 +11,7 @@ public class Reverse
 		Scanner inputLine=new Scanner(input.nextLine());
 		ArrayList<Integer> numberList=new ArrayList<Integer>();
 		while(inputLine.hasNextInt())
-		{
 			numberList.add(inputLine.nextInt());
-		}
 		numbers=createArray(numberList);
 		printArray(numbers);
 		reverseArray(numbers);
@@ -26,9 +24,7 @@ public class Reverse
 		size=list.size();
 		array=new int[size];
 		for(int i=0;i<size;i++)
-		{
 			array[i]=list.get(i);
-		}
 		return array;
 	}
 	public static void reverseArray(int[] array)
@@ -37,9 +33,9 @@ public class Reverse
 		for(int i=0;i<size/2;i++)
 		{
 			array[i]+=array[size-i-1];
-	        array[size-i-1]=array[i]-array[size-i-1];
-	        array[i]-=array[size-i-1];
-		}		
+			array[size-i-1]=array[i]-array[size-i-1];
+			array[i]-=array[size-i-1];
+		}
 	}
 	public static void printArray(int[] array)
 	{
@@ -49,9 +45,7 @@ public class Reverse
 	{
 		ArrayList<Integer> arrayList=new ArrayList<Integer>();
 		for(int element:array)
-		{
 			arrayList.add(element);
-		}
 		return arrayList;
 	}
 }

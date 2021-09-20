@@ -1,5 +1,5 @@
 #include <stdio.h>
-void main()
+int main(void)
 {
 	float in;
 	printf("Enter Your Marks obtained\n");
@@ -14,4 +14,5 @@ void main()
 	printf("\nGrade Fail\n");
 	if(in>100 || in<0)
 	printf("\nPlease Enter Valid Marks\n");
+	return 0;
 }

@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main()
+int main(void)
 {
 	int i=1001,x=0;
 	x=~i;
@@ -12,4 +12,5 @@ void main()
 	printf("\n%d\n",x);
 	x=&i;
 	printf("\n%d\n",x);
+	return 0;
 }
