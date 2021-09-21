@@ -135,3 +135,8 @@ dmypy.json
 **/.metadata/*
 .project
 .classpath
+
+# IntelliJ
+**/.idea/*
+study.iml
+**/out/*
