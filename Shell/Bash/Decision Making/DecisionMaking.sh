@@ -2,30 +2,22 @@
 
 # if, else and elif clause in bash
 
-USER_NAME=$1
-if [ $USER_NAME = $(whoami) ]
-then 
+user_name=$1
+if [ $user_name -eq $(whoami) ]
+then
 	echo "Hello A. B. Darekar"
 else
-	echo "Your user name is "$USER_NAME
+	echo "Your user name is "$user_name
 fi
 
-PID=$2
-if [ $PID -eq $$ ]
-then 
-	echo "Your guess is correct, the current process ID is "$PID
-elif [ $PID -lt $$ ]
+process_id=$2
+if [ $process_id -eq $$ ]
 then
-	echo "Your guess is wrong, the current process ID is greater than "$PID
-elif [ $PID -gt $$ ]
-then 
-	echo "Your guess is wrong, the current process ID is less than "$PID
+	echo "Your guess is correct, the current process ID is "$process_id
+elif [ $process_id -lt $$ ]
+then
+	echo "Your guess is wrong, the current process ID is greater than "$process_id
+elif [ $process_id -gt $$ ]
+then
+	echo "Your guess is wrong, the current process ID is less than "$process_id
 fi
-
-# Boolean comparitors
-# -eq equal to
-# -ne not equal to
-# -lt less than
-# -gt greater than
-# -le less than or equal to
-# -ge greater than or equal to

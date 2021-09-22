@@ -1,5 +1,5 @@
 package inheritance;
-public abstract class Quadrilateral
+abstract class Quadrilateral
 {
    protected double side1,side2,side3,side4;
    public Quadrilateral(double side1,double side2,double side3,double side4)
@@ -47,5 +47,11 @@ class Square extends Rhombus
 	public Square(double side)
 	{
 		super(side,side);
+	}
+}
+public class Inheritance
+{
+	public static void main(String[] args)
+	{
 	}
 }

@@ -1,4 +1,4 @@
-package datatypes;
+package examples;
 import java.util.Scanner;
 import java.util.ArrayList;
 public class Classification

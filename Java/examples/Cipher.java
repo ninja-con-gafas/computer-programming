@@ -1,5 +1,5 @@
 // print first letter of each word in upper case separated by a dot
-package stringmanipulation;
+package examples;
 import java.util.Scanner;
 public class Cipher
 {

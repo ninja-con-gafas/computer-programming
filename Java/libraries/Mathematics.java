@@ -2,7 +2,7 @@
 package libraries;
 import java.lang.Math;
 import java.util.Scanner;
-public class Logarithms
+public class Mathematics
 {
   public static void main(String args[])
   {

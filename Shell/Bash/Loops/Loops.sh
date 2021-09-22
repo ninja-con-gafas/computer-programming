@@ -2,22 +2,22 @@
 
 # while loop in bash
 
-COUNT=0
+count=0
 
-while [ $COUNT -lt 10 ]
+while [ $count -lt 10 ]
 do
-	echo $COUNT
-	((COUNT++))
+	echo $count
+	((count++))
 done
 
 # for loop in bash, it gets executed only if the parameters are given
 
-PARAMETERS=$@
-COUNT=1
-for PARAMETER in $PARAMETERS
+parameters=$@
+count=1
+for parameter in $parameters
 do
-	echo "Parameter "$COUNT "is" $PARAMETER
-	((COUNT++))
+	echo "Parameter "$count "is" $parameter
+	((count++))
 done
 exit 0
 

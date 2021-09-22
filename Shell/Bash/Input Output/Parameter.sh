@@ -8,8 +8,8 @@
 # 3. Newer version of bash support ${10}
 # 4. Parametes are used by assigning a variable (convention)
 
-NAME=$1
-echo "My Name is" $NAME
+name=$1
+echo "My Name is" $name
 echo "My username is" $(whoami)
 exit 0 # Exit code
 

@@ -1,23 +1,23 @@
 #!/usr/bin/env bash
 
-VALID=0
+valid=false
 
-while [ $VALID -eq 0 ]
+while [ $valid = false ]
 do
-	read -p "Enter your name and age: " NAME AGE
-	if [[ ( -z $NAME ) || ( -z $AGE )]]
+	read -p "Enter your name and age: " name age
+	if [[ ( -z $name ) || ( -z $age ) ]]
 	then
 		echo "Not enough parameters"
 		continue
-	elif [[ ! $NAME =~ ^[A-Za-z]+$ ]]
+	elif [[ ! $name =~ ^[A-Za-z]+$ ]]
 	then
-		echo  "Non alphabetical character detected in "$NAME
+		echo  "Non alphabetical character detected in "$name
 		continue
-	elif [[ ! $AGE =~ ^[0-9]+$ ]]
+	elif [[ ! $age =~ ^[0-9]+$ ]]
 	then
-		echo "Non numerical character detected in "$AGE
+		echo "Non numerical character detected in "$age
 		continue
 	fi
-	VALID=1
+	valid=true
 done
-echo "Your name is $NAME and you are $AGE years old."
+echo "Your name is $name and you are $age years old."

@@ -1,5 +1,5 @@
 package constructors;
-public class EquitySecurity
+public class Parameterized
 {
   int shares;
   float faceValue;
