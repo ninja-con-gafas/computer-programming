@@ -1,7 +1,7 @@
 package examples;
 import java.util.Scanner;
 import java.util.ArrayList;
-public class Classification
+public class IntegerClassification
 {
     public static void main(String[] args)
     {

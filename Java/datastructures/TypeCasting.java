@@ -1,5 +1,5 @@
-package datatypes;
-public class Casting
+package datastructures;
+public class TypeCasting
 {
   public static void main(String args[])
   {

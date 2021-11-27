@@ -1,13 +1,13 @@
-package datatypes;
+package datastructures;
 import java.util.Scanner;
 import java.util.ArrayList;
-public class Array
+public class ArrayArrayList
 {
 	public static void main(String[] args)
 	{
 		int[] numbers;
 		Scanner input=new Scanner(System.in);
-		System.out.println("Enter numbers in a single line sperated by space");
+		System.out.println("Enter numbers in a single line separated by space");
 		Scanner inputLine=new Scanner(input.nextLine());
 		ArrayList<Integer> numberList=new ArrayList<Integer>();
 		while(inputLine.hasNextInt())

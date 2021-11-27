@@ -138,5 +138,5 @@ dmypy.json
 
 # IntelliJ
 **/.idea/*
-study.iml
+*.iml
 **/out/*
