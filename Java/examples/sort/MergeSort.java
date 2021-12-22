@@ -3,12 +3,12 @@ import java.util.Arrays;
 import java.util.Scanner;
 public class MergeSort
 {
-    public static int[] sort(int[] array)
+    public static void sort(int[] array)
     {
-        return sort(array,0,array.length-1);
+        sort(array,0,array.length-1);
     }
 
-    public static int[] sort(int[] array, int leftIndex, int rightIndex)
+    public static void sort(int[] array, int leftIndex, int rightIndex)
     {
         if(leftIndex < rightIndex)
         {
@@ -17,7 +17,6 @@ public class MergeSort
             sort(array,midIndex+1,rightIndex);
             merge(array,leftIndex,midIndex,rightIndex);
         }
-        return array;
     }
     
     public static void merge(int[] array,int leftIndex, int midIndex, int rightIndex)
@@ -62,6 +61,7 @@ public class MergeSort
         int[] array = new int[size];
         for (int i = 0; i < size; i++)
             array[i] = scanner.nextInt();
-        System.out.println(Arrays.toString(sort(array)));
+        sort(array);
+        System.out.println(Arrays.toString(array));
     }
 }
