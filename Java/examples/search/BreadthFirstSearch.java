@@ -1,4 +1,5 @@
 package examples.search;
+
 import datastructures.Graph;
 
 import java.util.HashSet;
@@ -10,10 +11,10 @@ import java.util.Set;
 public class BreadthFirstSearch
 {
     private Graph<Integer> graph = new Graph<>();
+    private static Scanner read = new Scanner(System.in);
 
     public BreadthFirstSearch()
     {
-        Scanner read = new Scanner(System.in);
         int edges = read.nextInt();
 
         for(int i = 0; i < edges; i++)
@@ -49,7 +50,7 @@ public class BreadthFirstSearch
     public static void main(String args[])
     {
         BreadthFirstSearch bfs = new BreadthFirstSearch();
-        bfs.searchBreadthFirst(new Scanner(System.in).nextInt());
+        bfs.searchBreadthFirst(read.nextInt());
     }
 }
 
