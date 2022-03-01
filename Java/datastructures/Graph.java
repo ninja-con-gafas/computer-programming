@@ -43,6 +43,8 @@ public class Graph<T>
 
     public boolean hasNode(T node) { return  graph.containsKey(node); }
 
+    public boolean isTree() { return getEdgeCount(true) == getNodeCount() - 1; }
+
     @Override
     public String toString() { return graph.toString(); }
 }
