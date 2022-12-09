@@ -1,5 +1,5 @@
 // successive division method
-package loops;
+package examples;
 import java.util.Scanner;
 class HighestCommonFactor
 {
